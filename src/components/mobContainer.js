@@ -1,13 +1,23 @@
-import React from 'react'
+import React from 'react';
 
-function mobContainer() {
+const MobContainer = () => {
+    const mapStateToProps = (state) => {
+        return {
+            numberOfMob: state.numberOfState
+        }
+
+    }
     return (
         <div>
             <h1>
-                
+                number of mobile
             </h1>
-        </div>
-    )
-}
+            <button>
+                BUY
+            </button>
 
-export default mobContainer
+        </div>
+    );
+};
+
+export default MobContainer;
