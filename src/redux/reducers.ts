@@ -1,6 +1,17 @@
-import { combineReducers} from "redux"
+import { combineReducers, ReducersMapObject} from "redux"
 import {mobReducer} from "./mob/mobReducer"
+import { Reducer,AnyAction } from "redux"
+import { IMobState ,IStore} from "./reduxModels"
 
-export const reducers = combineReducers({
-    mobReducer:mobReducer
-})
+
+ 
+const reducers: ReducersMapObject<IStore, AnyAction> = { 
+
+    mobReducer:mobReducer as Reducer<IMobState,AnyAction>
+  
+    }
+  
+  export const rootreducer = combineReducers(
+      reducers
+  
+  )

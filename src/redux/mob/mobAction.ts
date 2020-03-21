@@ -1,8 +1,8 @@
 import {reduxType} from "../reduxTypes"
 
-export const mobAction = ()=>{
+export const buyMob = ()=>{
     return{
-        type: reduxType.MOB_TYPE,
-        info: 'first action'
+        type: reduxType.MOB_TYPE
+      
     }
 } 
