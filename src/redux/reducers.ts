@@ -4,6 +4,11 @@ import { Reducer,AnyAction } from "redux"
 import { IMobState ,IStore} from "./reduxModels"
 
 
+
+/* 
+*we conamnd here
+*/
+
  
 const reducers: ReducersMapObject<IStore, AnyAction> = { 
 
